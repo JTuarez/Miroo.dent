@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor-header{
+    background-color: #400f65a9;
+    width: 100%;
+     
+}
+
+.contenedor-header header{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 45px 20px;
+    
+}
+
+.contenedor-header header .logo{
+    display: block;
+    width: 100px;
+    position: absolute;
+    left: 100px;  
+    
+}
+
+.contenedor-header header .logo img{
+    border-radius: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    padding: 10px;
+
+}
+
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;  
+}
+
+.contenedor-header header nav ul li{
+    text-align: none;
+    margin: 0 10px;
+    padding: 5px;
+    transition: .6s;
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.contenedor-header header nav ul li:hover{
+    color: #31b8cd;
+}
+
+section .info{
+    display: block;
+    position: absolute;
+    width: 500px;
+    height: 250px;
+    left: 300px;
+    top: 300px;
+    text-decoration: none;
+
+}
+
+.info h2{
+    font-size: 60px;
+}
+
+section .info ul li{
+    position: absolute;
+   
+    list-style: none;
+    
+    animation: mover 7s infinite; 
+}
+
+@keyframes mover{
+    0%{margin-top: 0px;}
+    25%{margin-top: 0px;}
+    26%{margin-top: -40px;}
+    50%{margin-top: -40px;}
+    51%{margin-top: -80px;}
+    75%{margin-top: -80px;}
+    76%{margin-top: -40px;}
+    95%{margin-top: -40px;}
+    100%{margin-top: 0px;}
+
+    
+}
+
+
+
+
+
+
+
