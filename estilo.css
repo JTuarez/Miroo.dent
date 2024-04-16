@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+body{
+    height: 100vh;
+}
 .contenedor-header{
     background-color: #400f65a9;
     width: 100%;
@@ -23,7 +26,7 @@
     display: block;
     width: 100px;
     position: absolute;
-    left: 100px;  
+    left: 250px;  
     
 }
 
@@ -59,29 +62,43 @@
     width: 100%;
     height: 600px;
     background-color: rgb(41, 115, 115);
+    
+}
+
+.contenedor .img-slider{
+    height: 100%;
+    
+    
 }
 
 
 .contenedor .img-slider img{
     width: 100%;
     height: 600px;  
+     
 }
 
 
 .contenedor .info{
     display: block;
     position: absolute;
-    width: 500px;
+    width: 400px;
     height: 250px;
     left: 350px;
     top: 300px;
     text-decoration: none;
+  
+    border-radius: 10px;   
 
 }
 
+
+
 .info h2{
     font-size: 60px;
-    color: #400f65a9;
+    color: #31b8cd;
+
+
 }
 
 section .info ul li{
@@ -91,19 +108,71 @@ section .info ul li{
 }
 
 @keyframes mover{
-    0%{margin-top: 0px;}
-    25%{margin-top: 0px;}
-    26%{margin-top: -40px;}
-    50%{margin-top: -40px;}
-    51%{margin-top: -80px;}
-    75%{margin-top: -80px;}
-    76%{margin-top: -40px;}
-    95%{margin-top: -40px;}
-    100%{margin-top: 0px;}
 
     
 }
 
+.descripcion{
+    display: flex;
+    width: 100%;
+    height: 250px;
+    background-color:#ffffff;     
+}
+
+.descripcion img{
+    display: flex;
+    position: absolute;
+    left: 650px;
+    width: 100px;
+    height: 100px;
+    bottom: -20px;
+    font-size: 20px;
+    
+}
+
+.descripcion h3{ 
+    position: relative;
+    left: 100px;
+    margin: auto;
+    width: 500px;
+    height: 100px;
+    color: #400f65a9;
+    text-align: center;
+    font-size: 23px;   
+    bottom: -50px;
+}
+
+.imagenes{
+    display: flex;
+   
+    height: 450px;
+    text-align: center;
+    align-items: center;
+}
+
+.imagenes .clientes{
+    width: 90%;
+    height: 300px; 
+    display: flex;
+    margin: auto;
+    background-color: aqua;
+    justify-content: center;
+    
+}
+
+.imagenes .clientes span{
+    display: flex;
+    margin: auto;
+    text-align: center;
+    justify-content: space-between;
+    position: absolute;
+    font-size: 20px;
+    color: black;
+    
+    
+
+   
+}
 
 
 
