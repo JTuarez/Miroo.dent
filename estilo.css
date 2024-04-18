@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: monospace;
 }
 
 body{
@@ -15,8 +16,6 @@ body{
     position: fixed;
     top: 0;
     z-index: 1;
-
-    
     
 }
 
@@ -128,63 +127,56 @@ section .info ul li{
 
 .descripcion{
     display: flex;
-    width: 100%;
+    width:  100%;
     height: 250px;
-    background-color:#ffffff;     
+    background-color: white;
+    align-items: center;
+    justify-content: space-between;    
 }
 
 .descripcion img{
-    display: flex;
-    position: absolute;
-    left: 650px;
+    position: relative;
+    left: 300px;
     width: 100px;
     height: 100px;
-    bottom: -20px;
-    font-size: 20px;
-    
+      
 }
 
 .descripcion h3{ 
     position: relative;
-    left: 100px;
-    margin: auto;
-    width: 500px;
+    right: 400px;
+    width: 350px;
     height: 100px;
     color: #400f65a9;
-    text-align: center;
-    font-size: 23px;   
-    bottom: -50px;
+    font-size: 15px;   
+
 }
 
 .imagenes{
+    display: flex;
     width: 100%;
-    display: flex; 
-    height: 300px;
-    text-align: center;
-    align-items: center;
-    background-color: aquamarine; 
+    background-color: aqua; 
+    justify-content: space-between;
+    align-items: center; 
+    gap: 30px;
+    cursor: pointer;
 }
 
 .imagenes .clientes{
+    width: 25%;
+    background-color: aqua;     
+}
+
+.imagenes .clientes img{
     width: 100%;
-    height: 300px; 
-    display: flex;
-    margin: auto;
-    background-color: aqua;
-    justify-content: center;
-    
+    gap: 40px;
 }
 
 .imagenes .clientes span{
-    display: flex;
-    margin: auto;
-    text-align: center;
-    justify-content: space-between;
     position: absolute;
     font-size: 20px;
     color: black;
-    
-
+    margin-left: 50px;
 }
 
 
