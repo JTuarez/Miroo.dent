@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="img/muela.jpg">
     <title>Miroo.Dent</title>
 </head>
@@ -35,14 +36,8 @@
          Dra Mirella Rodriguez
         </h2>
     </div>
+    
 
-    <div class="beneficios">
-        <ul>
-            <li>Experiencia</li>
-            <li>Sonrisas</li>
-            <li>Cercania</li>
-        </ul>
-    </div>
     
 </section>   
     <section class="descripcion">
@@ -68,11 +63,48 @@
           <span class ="menu">Contactame</span> 
             <img src="img/llamame.jpg" alt="">
         </div>
-
     </section>
 
-       </div>
-    </div>
-  </div>  
- </body>
+    <section id="contacto" class="contacto">
+        <div class="contenedor-contacto">
+            <h2>Contacto</h2>
+        <div class="fila">
+
+            <div class="col">
+                <form>
+                    <input type = "text" name ="nombre" placeholder="Tu nombre" required="">
+                    <input type = "number" name ="telefono" placeholder="Telefono" required="">
+                    <input type = "email" name ="email" placeholder="Email" required="">
+                    <input type="text" name="tema" placeholder ="tema" required="">
+                    <textarea name="mensaje" id="msj" cols="20" rows="5" placeholder="Mensaje" required=""></textarea>
+                    <input type="submit" name="enviar">
+                </form>
+            </div>
+
+            <div class="col">
+                <img src="img/mapa.jpg">
+                <div class="informacion">
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Santiago de chile
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-mobile-screen"></i>
+                            Celular: 56 994890623
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            Email: miroo.dent@gmail.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div> 
+      </section>
+      <footer> 
+
+      </footer>
+  </body>
 </html>
