@@ -6,7 +6,6 @@
 }
 
 body{
-    
     height: 100vh;
 }
 
@@ -29,7 +28,6 @@ body{
 }
 
 .contenedor-header header .logo{
-    display: block;
     width: 100px;
     position: absolute;
     left: 150px;  
@@ -71,7 +69,7 @@ body{
    
 }
 
-.contenedor::before{
+/*.contenedor::before{
     content: "";
     width: 100%;
     min-height: 100vh;
@@ -82,7 +80,7 @@ body{
     opacity: 0.5;
 
 }
-
+*/
 
 .contenedor{  
     display: flex; 
@@ -101,7 +99,6 @@ body{
     
 }
 .contenedor .info{
-    display: block;
     position: absolute;
     width: 400px;
     height: 250px;
@@ -147,25 +144,31 @@ body{
     height: 250px;
     background-color: white;
     align-items: center;
-    justify-content: space-between;    
+    justify-content: space-between;
+ 
 }
 
 .descripcion img{
-    position: relative;
+    position: absolute;
     left: 300px;
     width: 100px;
     height: 100px;
       
 }
 
-.descripcion h3{ 
-    position: relative;
-    right: 400px;
-    width: 350px;
-    height: 100px;
-    color: #400f65a9;
-    font-size: 15px;   
+.descripcion .yo{
+    align-items: center;
+    justify-content: center;
+}
 
+
+.descripcion .yo h3{ 
+    position: absolute;
+    width: 400px;
+    height: 100px;
+    color: #400f65a9; 
+    margin-left: 450px; 
+    bottom: -200px;
 }
 
 .imagenes{
@@ -173,20 +176,20 @@ body{
     width: 100%;
     justify-content: space-between;
     align-items: center; 
-
-    
+  
 }
 
 .imagenes .clientes{
     width: 300px;
-    margin: 50px; 
- 
+    margin: 50px;  
 }
 
 .imagenes .clientes img{
     width: 100%;
     cursor: pointer;
+    border: 1px solid #400f65a9;
     border-radius: 20px;
+
 }
 
 .imagenes .clientes span{
@@ -268,6 +271,80 @@ body{
 .contacto .col img{
     width: 100%;
 }
+
+.redes{
+    display: flex;
+    height: 100px;
+    background-color: #7e539f;
+    align-items: center;
+    justify-content: center;  
+}
+
+.redes ul li{
+    display: inline-block;
+    margin: 0 12px;
+    color:#31b8cd;
+    font-size: 40px;
+    list-style: none;
+}
+
+.redes ul li i:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+    transition: 0.3s; 
+}
+
+.horario{
+    display: flex;
+    background-color:#7e539f;
+    padding: 20px;
+    justify-content: center;
+    align-items: center; 
+   
+   
+}
+
+.horario .datos{
+    display: flex;
+    height: 200px;
+    width: 200px;
+    margin: 0 12px;
+    font-size: 40px;
+    color:#31b8cd;
+    justify-content: center;
+    background-color: aqua;
+   
+    
+}
+
+.horario .datos i{
+    position: absolute;
+}
+
+.horario .datos i:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+    transition: 0.3s; 
+}
+
+.datos p{
+    font-size: 20px;
+    color:#fff;
+    margin: 75px 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
