@@ -76,7 +76,7 @@ body{
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(180deg,#31b8cd,#fefeff);
+    background: linear-gradient(90deg,#31b8cd,#fefeff);
     opacity: 0.5;
 
 }
@@ -150,7 +150,7 @@ body{
 
 .descripcion img{
     position: absolute;
-    left: 300px;
+    left: 600px;
     width: 100px;
     height: 100px;
       
@@ -167,7 +167,7 @@ body{
     width: 400px;
     height: 100px;
     color: #400f65a9; 
-    margin-left: 450px; 
+    margin-left: 800px; 
     bottom: -200px;
 }
 
@@ -180,8 +180,9 @@ body{
 }
 
 .imagenes .clientes{
-    width: 300px;
-    margin: 50px;  
+    width: 400px;
+    margin: 100px;
+      
 }
 
 .imagenes .clientes img{
@@ -189,6 +190,7 @@ body{
     cursor: pointer;
     border: 1px solid #400f65a9;
     border-radius: 20px;
+    
 
 }
 
@@ -221,8 +223,9 @@ body{
     top: 50%;
     padding: 20px;
     transform: translate(-50%, -50%);
-    left: 50%;
+    left: 30%;
     list-style: none;
+    
 }
 
 .contacto .col .informacion ul li{
@@ -299,21 +302,18 @@ body{
     background-color:#7e539f;
     padding: 20px;
     justify-content: center;
-    align-items: center; 
-   
-   
+    align-items: center;      
 }
 
 .horario .datos{
     display: flex;
     height: 200px;
     width: 200px;
-    margin: 0 12px;
+    margin: 0 250px;
     font-size: 40px;
     color:#31b8cd;
     justify-content: center;
-    background-color: aqua;
-   
+    text-align: center; 
     
 }
 
@@ -331,6 +331,7 @@ body{
     font-size: 20px;
     color:#fff;
     margin: 75px 30px;
+
 }
 
 
