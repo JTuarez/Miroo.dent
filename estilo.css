@@ -15,12 +15,10 @@ body{
     position: fixed;
     top: 0;
     z-index: 1;
-    
 }
 
 .contenedor-header header{
     display: flex;
-    margin: auto;
     align-items: center;
     justify-content: center;
     padding: 30px ;
@@ -30,8 +28,7 @@ body{
 .contenedor-header header .logo{
     width: 100px;
     position: absolute;
-    left: 150px;  
-    
+    left: 200px;  
 }
 
 .contenedor-header header .logo img{
@@ -50,7 +47,7 @@ body{
 
 @media (max-width: 900px){
     .contenedor-header{
-        width: 430px;
+
     }
 
     .contenedor-header header .logo img{
@@ -164,20 +161,25 @@ body{
     height: 250px;
     background-color: white;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    background-color: #7e539f;
  
 }
 
 .descripcion img{
-    position: absolute;
     left: 600px;
     width: 100px;
-    height: 100px;  
+    height: 100px;
+    border-radius: 100px;  
 }
 
-.descripcion .yo{
+.descripcion .yo{ 
+    width: 400px;
+    height: 100px;
+    background-color: #31b8cd;
     align-items: center;
     justify-content: center;
+    margin-left: 50px;
 }
 
 
@@ -186,14 +188,17 @@ body{
     width: 400px;
     height: 100px;
     color: #400f65a9; 
-    margin-left: 800px; 
     bottom: -200px;
 }
 
-@media (max-width){
+@media (max-width: 900px){
 
     .descripcion .yo h3{
-        width: 10px;
+        width: 100px;
+       }
+
+    .descripcion .yo{
+        width: 100px;
         
     }
 }
@@ -201,7 +206,7 @@ body{
 .imagenes{
     display: flex;
     max-width: 100%;
-    height: 350px;
+    height: 400px;
     justify-content: center;
     align-items: center; 
     text-align: center;
@@ -252,7 +257,7 @@ body{
     top: 50%;
     padding: 20px;
     transform: translate(-50%, -50%);
-    left: 30%;
+    right: 40%;
     list-style: none;
     
 }
@@ -260,7 +265,7 @@ body{
 .contacto .col .informacion ul li{
     margin-bottom: 20px;
     color: black;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .contacto .col .informacion ul li i{
@@ -289,19 +294,23 @@ body{
 }
 
 .contacto .col input, .contacto .col textarea{
-    display: block;
-    width: 100%;
-    padding: 12px;
+    margin-left: 200px;
+    margin: 0 250px;
+    width: 70%;
+    padding: 15px;
     border: none;
     margin-bottom: 10px;
     background-color: #31b8cd;
     color: #fff;
     font-size: 15px;
     border-radius: 10px;
+    
 }
 
 .contacto .col img{
-    width: 100%;
+    width: 70%;
+    height: 500px;
+    border-radius: 10px;
 }
 
 .redes{
