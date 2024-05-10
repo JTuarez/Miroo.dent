@@ -12,6 +12,7 @@ body{
 .contenedor-header{
     background-color: #7e539f;
     width: 100%;
+    height: 100px;
     position: fixed;
     top: 0;
     z-index: 1;
@@ -36,16 +37,12 @@ body{
     max-width: 85%;
     object-fit: cover;
     padding: 10px;
-    
-
 }
 
 .contenedor-header header ul{
     display: flex;
     list-style: none;  
 }
-
-
 
 .contenedor-header header nav ul li{
     text-align: none;
@@ -64,8 +61,7 @@ body{
 
 
 .contenedor img{ 
-    width: 100%;
-   
+    width: 100%; 
 }
 
 .contenedor::before{
@@ -77,52 +73,36 @@ body{
     left: 0;
     background: linear-gradient(220deg,#31b8cd,#fefeff);
     opacity: 0.5;
-
 }
-
 
 .contenedor{  
     display: flex; 
     width: 100%;
     height: 100%;
-    background-color: rgb(41, 115, 115);
-    justify-content: space-between;
-
-    
+    background-color: rgb(41, 115, 115); 
 }
 
 
 .contenedor .info{
     position: absolute;
     width: 400px;
-    height: 250px;
-    left: 350px;
+    height: 400px;
+    left: 100px;
     top: 300px;
-    text-decoration: none;
-    border-radius: 10px;   
-
+    border-radius: 20px; 
+    background-color: #7e539f; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+   
 }
 
-.contenedor .info{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  left: 100px;
-  
-}
 
 .info h2{
     position: absolute;
     font-size: 60px;
     color: #31b8cd; 
-}
-
-
-.contenedor .info ul li{
-    position: absolute;
-    list-style: none; 
-    animation: mover 7s infinite; 
+    text-align: center;
 }
 
 
@@ -229,8 +209,7 @@ body{
 
 .contacto .fila{
     display: flex;
-    max-width: 100%;
-    margin-left: 20px;  
+    background-color: rgb(53, 13, 106);
 }
 
 .contacto .col{
@@ -269,10 +248,9 @@ body{
 
 .redes ul li{
     display: inline-block;
-    margin: 0 12px;
+    margin: 0 20px;
     color:#31b8cd;
-    font-size: 40px;
-    list-style: none;
+    font-size: 50px;
 }
 
 .redes ul li i:hover{
@@ -285,19 +263,20 @@ body{
     display: flex;
     background-color:#7e539f;
     padding: 20px;
-    justify-content: center;
-    align-items: center;      
+    justify-content: center;  
+    gap: 500px;
 }
 
 .horario .datos{
     display: flex;
     height: 200px;
     width: 200px;
-    margin: 0 250px;
+
     font-size: 40px;
     color:#31b8cd;
     justify-content: center;
     text-align: center; 
+    background-color: #3931cd;
     
 }
 
@@ -315,27 +294,7 @@ body{
     font-size: 20px;
     color:#fff;
     margin: 75px 30px;
-
 }
-
-@media (max-width: 900px){
-    .horario{
-        width: 100%;
-        height: 400px;
-
-    }
-}
-
-@media (max-width: 900px){
-    .redes{
-        width: 100%;
-    }
-
-}
-
-
-
-
 
 
 
