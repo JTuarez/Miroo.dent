@@ -45,18 +45,7 @@ body{
     list-style: none;  
 }
 
-@media (max-width: 900px){
-    .contenedor-header{
 
-    }
-
-    .contenedor-header header .logo img{
-        width: 50px;
-        margin-top: 50px;
-        margin-left: 50px;
-    }
-    
-}
 
 .contenedor-header header nav ul li{
     text-align: none;
@@ -102,13 +91,7 @@ body{
     
 }
 
-@media (max-width: 900px) {
-    .contenedor{
-        width: 100%;
-        object-fit: cover;  
-        }
-    
-}
+
 .contenedor .info{
     position: absolute;
     width: 400px;
@@ -135,14 +118,6 @@ body{
     color: #31b8cd; 
 }
 
-@media (max-width: 900px){
-    .contenedor .info h2{
-        font-size: 40px;
-    }
-}
-
-
-
 
 .contenedor .info ul li{
     position: absolute;
@@ -150,10 +125,6 @@ body{
     animation: mover 7s infinite; 
 }
 
-@keyframes mover{
-
-    
-}
 
 .descripcion{
     display: flex;
@@ -191,31 +162,23 @@ body{
     bottom: -200px;
 }
 
-@media (max-width: 900px){
 
-    .descripcion .yo h3{
-        width: 100px;
-       }
-
-    .descripcion .yo{
-        width: 100px;
-        
-    }
-}
 
 .imagenes{
     display: flex;
-    max-width: 100%;
-    height: 400px;
-    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    justify-content:center;
     align-items: center; 
-    text-align: center;
-    background-color: antiquewhite;  
+    background-color: antiquewhite; 
+    gap: 50px; 
+    flex-wrap: wrap;
 }
+
 
 .imagenes .clientes{ 
     display: flex;
-    width: 450px;
+    width: 400px;
     height: 350px;
 }
 
@@ -226,6 +189,7 @@ body{
     cursor: pointer;
     border: 1px solid #400f65a9;
     border-radius: 20px;  
+   
 }
 
 
@@ -233,24 +197,6 @@ body{
     transform: scale(1.1);
     transition: .10s;
 }
-
-@media (max-width: 1250px){
-    .imagenes .clientes{
-        width: 100%;
-        background-color: #31b8cd;
-  
-    }
-}
-
-@media (max-width: 1250px){
-    .imagenes .clientes img{
-      
-        width: 150px;
-        height: 300px;
-        object-fit: fill;
-          }        
-}
-
 
 .contacto .col .informacion ul {
     position: absolute;
