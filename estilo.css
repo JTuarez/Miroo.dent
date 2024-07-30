@@ -5,64 +5,62 @@
     font-family: monospace;
 }
 
-body{
+.contenedor{
+    width: 100%;
+    background-color: #31b8cd;
+
+}
+
+.contenedor img{
+    width: 100%;
     height: 100vh;
+    object-fit: cover;
+    background-color: #3931cd;  
 }
 
 .contenedor-header{
     background-color: #7e539f;
-    width: 100%;
-    height: 100px;
     position: fixed;
+    width: 100%;
     top: 0;
-    z-index: 1;
+    left: 0;
+    z-index: 99;   
 }
 
 .contenedor-header header{
+    max-width: 1100px;
+    height: 100px;
+    margin: auto;
     display: flex;
-    align-items: center;
     justify-content: center;
-    padding: 30px ;
-    
-}
-
-.contenedor-header header .logo{
-    width: 100px;
-    position: absolute;
-    left: 200px;  
-}
-
-.contenedor-header header .logo img{
-    border-radius: 100%;
-    max-width: 85%;
-    object-fit: cover;
-    padding: 10px;
+    align-items: center; 
+    gap: 50px;
+   
 }
 
 .contenedor-header header ul{
     display: flex;
-    list-style: none;  
+    list-style: none;
+    font-size: 16px;
+    
 }
 
-.contenedor-header header nav ul li{
-    text-align: none;
-    margin: 0 10px;
-    padding: 5px;
-    transition: .6s;
+.contenedor-header header nav ul li a{
+    text-align: center;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
     text-decoration: none;
-    font-size: 20px;
-    color: #ffffff;
-    cursor: pointer;
+  
 }
 
-.contenedor-header header nav ul li:hover{
-    color: #31b8cd;
+.contenedor-header .logo img{
+    width: 70px;
+    border-radius: 100%;
 }
 
 
-.contenedor img{ 
-    width: 100%; 
-}
 
 .contenedor::before{
     content: "";
@@ -71,40 +69,9 @@ body{
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(220deg,#31b8cd,#fefeff);
-    opacity: 0.5;
-}
-
-.contenedor{  
-    display: flex; 
-    width: 100%;
-    height: 100%;
-    background-color: rgb(41, 115, 115); 
-}
-
-
-.contenedor .info{
-    position: absolute;
-    width: 400px;
-    height: 400px;
-    left: 100px;
-    top: 300px;
-    border-radius: 20px; 
-    background-color: #7e539f; 
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-   
-}
-
-
-.info h2{
-    position: absolute;
-    font-size: 60px;
-    color: #31b8cd; 
-    text-align: center;
-}
-
+    background: linear-gradient(to top,#31b8cd,#fefeff,#31b8cd);
+    opacity: 0.6;
+} 
 
 .descripcion{
     display: flex;
@@ -114,7 +81,6 @@ body{
     align-items: center;
     justify-content: center;
     background-color: #7e539f;
- 
 }
 
 .descripcion img{
@@ -124,23 +90,6 @@ body{
     border-radius: 100px;  
 }
 
-.descripcion .yo{ 
-    width: 400px;
-    height: 100px;
-    background-color: #31b8cd;
-    align-items: center;
-    justify-content: center;
-    margin-left: 50px;
-}
-
-
-.descripcion .yo h3{ 
-    position: absolute;
-    width: 400px;
-    height: 100px;
-    color: #400f65a9; 
-    bottom: -200px;
-}
 
 
 
@@ -160,10 +109,12 @@ body{
     display: flex;
     width: 400px;
     height: 350px;
+    
 }
 
 .imagenes .clientes img{
-    position: absolute;
+    position: relative;
+    object-fit: cover;
     width: 400px;
     height: 350px;
     cursor: pointer;
@@ -172,20 +123,18 @@ body{
    
 }
 
-
 .imagenes .clientes img:hover{
     transform: scale(1.1);
     transition: .10s;
 }
 
-.contacto .col .informacion ul {
+.fila .col ul {
+    width: 100px;
     position: absolute;
     top: 50%;
-    padding: 20px;
     transform: translate(-50%, -50%);
     right: 40%;
-    list-style: none;
-    
+    list-style: none;   
 }
 
 .contacto .col .informacion ul li{
@@ -199,7 +148,6 @@ body{
     display: inline-block;
 }
 
-
 .contacto h2{
     font-size: 40px;
     text-align: center;
@@ -212,15 +160,21 @@ body{
     background-color: rgb(53, 13, 106);
 }
 
+@media (max-width: 1280px){
+    .contacto .fila{
+        flex-direction: column;
+    }
+    
+}
+
 .contacto .col{
     width: 100%;
     padding: 20px;
-    position: relative;   
+    position: relative; 
+    text-align: center;  
 }
 
 .contacto .col input, .contacto .col textarea{
-    margin-left: 200px;
-    margin: 0 250px;
     width: 70%;
     padding: 20px;
     border: none;
@@ -228,14 +182,22 @@ body{
     background-color: #31b8cd;
     color: #fff;
     font-size: 15px;
-    border-radius: 10px;
-    
+    border-radius: 15px;  
 }
+
+
 
 .contacto .col img{
     width: 70%;
     height: 470px;
     border-radius: 20px;
+}
+
+@media (max-width: 1280px){
+    .contacto .col img{
+        width: 100%;
+    }
+
 }
 
 .redes{
@@ -264,14 +226,13 @@ body{
     background-color:#7e539f;
     padding: 20px;
     justify-content: center;  
-    gap: 500px;
+    gap: 50px;
 }
 
 .horario .datos{
     display: flex;
     height: 200px;
-    width: 200px;
-
+    width: 200px;   
     font-size: 40px;
     color:#31b8cd;
     justify-content: center;
