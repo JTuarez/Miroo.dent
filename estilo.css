@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: monospace;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 .contenedor{
@@ -32,7 +32,7 @@
     height: 70px;
     margin: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center; 
     gap: 50px;
    
@@ -58,9 +58,24 @@
 .contenedor-header .logo img{
     width: 50px;
     border-radius: 100%;
+    
 }
 
+.contenedor-header h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 35px;
+    color: #31b8cd;
+    cursor: pointer;
+}
 
+.nav-responsive{
+    background-color: #31b8cd;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px 10px;
+    display: none;
+}
 
 .contenedor::before{
     content: "";
@@ -136,19 +151,21 @@
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
-    right: 40%;
-    list-style: none;   
+    right: 65%;
+    list-style: none;
+       
 }
 
 .contacto .col .informacion ul li{
     margin-bottom: 20px;
     color: black;
-    font-size: 20px;
+    font-size: 15px;
+    
 }
 
 .contacto .col .informacion ul li i{
     color: #31b8cd;
-    display: inline-block;
+    
 }
 
 .contacto h2{
@@ -192,11 +209,8 @@
     .contacto .col input, .contacto .col textarea{
         width: 100%;
       
-    }
-        
+    }        
 }
-
-
 
 .contacto .col img{
     width: 70%;
@@ -257,6 +271,37 @@
 
 .col h3{
     color: #fff;
+}
+
+
+@media screen and (max-width: 980px){
+
+ nav{
+    display: none;
+  }
+    
+.nav-responsive{
+    display: block;
+  } 
+    
+nav.responsive{
+   display: block;
+   position: absolute;
+   top: 75px;
+   width: 100px;
+   right: 0;
+   background-color:#7e539f; 
+   }
+
+nav.responsive ul{
+    display: block !important;
+}
+
+nav.responsive ul li{
+    border-bottom: 1px solid;
+    padding: 10px 8px;
+    
+}
 }
 
 

@@ -15,8 +15,9 @@
      <div class="logo">
         <img src="img/muela.jpg" >
      </div>
+     <h2>Miro.Dent</h2>
        
-     <nav id="nav">
+     <nav id="nav" class="responsive">
         <ul>
             <li><a href="#Inicio" onclick="seleccionar()">INICIO</a></li>
             <li><a href="#Perfil Profesional" onclick="seleccionar()">PERFIL PROFESIONAL</a></li>
@@ -24,6 +25,11 @@
             <li><a href="#Servicios" onclick="seleccionar()">SERVICIOS</a><li>    
         </ul>
      </nav>
+
+     <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+        <i class="fa-solid fa-bars"></i>
+     </div>
+
    </header>
 </div> 
 
@@ -135,6 +141,7 @@
         </section>
 
     </footer>
+    <script src="script.js"></script>
 
 
   </body>
