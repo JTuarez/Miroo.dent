@@ -247,7 +247,7 @@ html{
 
 .redes ul li{
     display: inline-block;
-    margin: 0 30px;
+    margin: 0px 40px;
     color:#31b8cd;
     font-size: 50px;
 }
@@ -313,6 +313,27 @@ nav.responsive ul li{
     padding: 10px 8px;   
     }
 }
+
+footer .arriba{
+    height: 50PX;
+    color: #fff;
+    line-height: 50px;
+    width: 50PX;
+    position: absolute;
+    left: 50%;
+    font-size: 30px;
+    border-radius: 50%;
+    background-color: #31b8cd;
+    transform:translateX()(-50%);
+
+}
+
+footer .arriba i{
+    margin-left: 14px;
+    
+}
+
+
 
 
 
