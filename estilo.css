@@ -5,6 +5,10 @@
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .contenedor{
     width: 100%;
     background-color: #31b8cd;
@@ -63,7 +67,7 @@
 
 .contenedor-header h2{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 35px;
+    font-size: 40px;
     color: #31b8cd;
     cursor: pointer;
 }
@@ -94,13 +98,13 @@
     align-items: center;
     background-color:#fff;
     height: 250px;
-    gap:50px;
+    gap:30px;
     color:#7e539f
 }
 
 .descripcion .yo{
     display: flex;
-    width: 550px;   
+    width: 950px;   
 }
 
 .descripcion img{
@@ -147,14 +151,22 @@
 }
 
 .fila .col ul {
-    width: 100px;
+    gap: 20px;
+    width: 60px;
     position: absolute;
-    top: 50%;
+    top: 70%;
     transform: translate(-50%, -50%);
     right: 65%;
     list-style: none;
+    display: inline-flex;
        
 }
+
+.contacto{
+    padding: 100px 0px;
+}
+
+
 
 .contacto .col .informacion ul li{
     margin-bottom: 20px;
@@ -189,7 +201,7 @@
 
 .contacto .col{
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     position: relative; 
     text-align: center;  
 }
@@ -202,7 +214,7 @@
     background-color: #31b8cd;
     color: #fff;
     font-size: 20px;
-    border-radius: 15px;  
+    border-radius: 5px;  
 }
 
 @media (max-width: 1280px){
@@ -214,7 +226,7 @@
 
 .contacto .col img{
     width: 70%;
-    border-radius: 20px;
+    border-radius: 7px;
 }
 
 @media (max-width: 1280px){
@@ -252,7 +264,6 @@
 }
 
 .contenedor-footer .fila{
-    padding: 50px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -299,9 +310,8 @@ nav.responsive ul{
 
 nav.responsive ul li{
     border-bottom: 1px solid;
-    padding: 10px 8px;
-    
-}
+    padding: 10px 8px;   
+    }
 }
 
 

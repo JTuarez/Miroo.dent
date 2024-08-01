@@ -12,8 +12,8 @@
 <body>
 <div class="contenedor-header">
     <header>
-     <div class="logo">
-        <img src="img/muela.jpg" >
+     <div  id="" class="logo">
+        <img src="img/muela.jpg">
      </div>
      <h2>Miro.Dent</h2>
        
@@ -22,7 +22,7 @@
             <li><a href="#Inicio" onclick="seleccionar()">INICIO</a></li>
             <li><a href="#Perfil Profesional" onclick="seleccionar()">PERFIL PROFESIONAL</a></li>
             <li><a href="#Contacto" onclick="seleccionar()">CONTACTO</a></li>
-            <li><a href="#Servicios" onclick="seleccionar()">SERVICIOS</a><li>    
+            <li><a href="#Servicios" onclick="seleccionar()">SERVICIOS</a></li>    
         </ul>
      </nav>
 
@@ -33,7 +33,7 @@
    </header>
 </div> 
 
-<section class="contenedor">  
+<section id="Inicio" class="contenedor">  
     
      <img src="img/clinica.jpg" alt="Mirella"> 
  
@@ -44,9 +44,9 @@
     <img src="img/muela.jpg" alt="">
         
     <div class="yo">
-       <h2><span>Dra Mirella Rodriguez</span> con mas de 30 años de experiencia
-        otorgando las distintas atenciones dentales a mis pacientes, tanto adultos y niños
-      </h2> 
+       <h3><span>Dra Mirella Rodriguez</span> con mas de 25 años de experiencia
+        otorgando las distintas atenciones dentales como Endodoncia, Limpieza, Cirujias terceros molares, Protesis fija, Protesis invisible y Limpieza. Todo esto realizado en mis pacientes tanto adultos y niños para su mejor sonrisa
+      </h3> 
     </div>
 </section>
 
@@ -69,8 +69,8 @@
     <section class="contacto">  
 
         <div class="contenedor-contacto">
-            <h2>Contacto</h2>         
-        <div class="fila">
+               
+        <div  id="Contacto" class="fila">
 
             <div class="col">
                 <form>
@@ -89,7 +89,7 @@
                     <ul>
                         <li>
                             <i class="fa-solid fa-location-dot"></i>
-                            Santiago de chile
+                            Santiago de chile, Independencia
                         </li>
                         <li>
                             <i class="fa-solid fa-mobile-screen"></i>
@@ -106,20 +106,21 @@
         </div> 
       </section>   
       
-      
-    <div class="redes">
-        <ul>    
-            <li>
-                <i class="fa-brands fa-linkedin"></i>
-            </li>
-            <li>
-                <i class="fa-brands fa-instagram"></i>
-            </li>
-            <li><i class="fa-brands fa-whatsapp"></i></li>
-        </ul>   
-    </div>
     <footer>
         <section class="contenedor-footer">
+
+            <div class="redes">
+                <ul>    
+                    <li>
+                        <i class="fa-brands fa-linkedin"></i>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-instagram"></i>
+                    </li>
+                    <li><i class="fa-brands fa-whatsapp"></i></li>
+                </ul>   
+            </div>
+            
             <div class="fila">
                 <div class="col">
                     <i class="fa-solid fa-phone"></i>
@@ -139,10 +140,9 @@
             </div>
             
         </section>
-
     </footer>
-    <script src="script.js"></script>
 
+    <script src="script.js"></script>
 
   </body>
 </html>
