@@ -10,9 +10,9 @@ html{
 }
 
 .contenedor{
+    display: flex;
     width: 100%;
-    background-color: #31b8cd;
-
+    background-color: #31b8cd8e;
 }
 
 .contenedor img{
@@ -33,7 +33,7 @@ html{
 
 .contenedor-header header{
     max-width: 1100px;
-    height: 70px;
+    height: 80px;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -67,7 +67,7 @@ html{
 
 .contenedor-header h2{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 40px;
+    font-size: 30px;
     color: #31b8cd;
     cursor: pointer;
 }
@@ -162,12 +162,6 @@ html{
        
 }
 
-.contacto{
-    padding: 100px 0px;
-}
-
-
-
 .contacto .col .informacion ul li{
     margin-bottom: 20px;
     color: black;
@@ -175,17 +169,27 @@ html{
     
 }
 
+
 .contacto .col .informacion ul li i{
     color: #31b8cd;
     
 }
 
-.contacto h2{
-    font-size: 40px;
-    text-align: center;
-    padding: 20px 0;  
-    color: #7e539f;
+@media (max-width: 900){
+    .contenedor-contacto{
+        width: 500px;
+        margin: auto;
+    
+    }
+
 }
+
+.contenedor-contacto{
+    max-width: 1300px;
+    margin: 70px auto;
+
+}
+
 
 .contacto .fila{
     display: flex;
@@ -201,32 +205,31 @@ html{
 
 .contacto .col{
     width: 100%;
-    padding: 10px;
+    padding: 20px;
     position: relative; 
     text-align: center;  
 }
 
 .contacto .col input, .contacto .col textarea{
-    width: 70%;
+    width: 100%;
     padding: 15px;
     border: none;
-    margin-bottom: 15px;
-    background-color: #31b8cd;
+    margin-bottom: 12px;
+    background-color: #31b8cd8e;
     color: #fff;
     font-size: 20px;
-    border-radius: 5px;  
+    border-radius: 15px;  
 }
 
 @media (max-width: 1280px){
     .contacto .col input, .contacto .col textarea{
-        width: 100%;
-      
+        width: 100%;   
     }        
 }
 
 .contacto .col img{
-    width: 70%;
-    border-radius: 7px;
+    width: 108%;
+    border-radius: 15px;
 }
 
 @media (max-width: 1280px){
@@ -247,8 +250,8 @@ html{
 
 .redes ul li{
     display: inline-block;
-    margin: 0px 40px;
-    color:#31b8cd;
+    margin: 0 30px;
+    color:#31b8cd8e;
     font-size: 50px;
 }
 
@@ -260,7 +263,7 @@ html{
 
 .contenedor-footer{
     background-color: #7e539f;
-    height: 300px;
+    
 }
 
 .contenedor-footer .fila{
@@ -310,31 +313,18 @@ nav.responsive ul{
 
 nav.responsive ul li{
     border-bottom: 1px solid;
-    padding: 10px 8px;   
-    }
-}
-
-footer .arriba{
-    height: 50PX;
-    color: #fff;
-    line-height: 50px;
-    width: 50PX;
-    position: absolute;
-    left: 50%;
-    font-size: 30px;
-    border-radius: 50%;
-    background-color: #31b8cd;
-    transform:translateX()(-50%);
-
-}
-
-footer .arriba i{
-    margin-left: 14px;
+    padding: 10px 8px;
     
 }
+}
 
-
-
+@media (max-width:900px){
+    .fila{
+        flex-direction: column;
+        
+     
+    }
+}
 
 
 
