@@ -211,20 +211,19 @@ html{
     height: 450px;
     margin: 50px auto;
     justify-content: center;
-    background-color: rgb(74, 127, 202);
+   
     gap: 50px;
     
 }
 
 .servicios .card{
-    background-color: #353779;
+
     border: solid 2px #31b8cd;
     width: 100%;
-
 }
 
 .servicios .card img{
-    border: solid 2px #31b8cd;
+
     object-fit: cover;
     width: 100%;
     height: 50%;
