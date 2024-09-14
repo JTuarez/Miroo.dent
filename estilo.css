@@ -31,6 +31,8 @@ html{
     z-index: 99;   
 }
 
+
+
 .contenedor-header header{
     max-width: 1100px;
     height: 80px;
@@ -65,11 +67,11 @@ html{
     
 }
 
-.contenedor-header h2{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 30px;
+.contenedor-header .inicio a{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 38px;
     color: #31b8cd;
-    cursor: pointer;
+    text-decoration: none;
 }
 
 .nav-responsive{
@@ -111,7 +113,7 @@ html{
  .animacion ul li{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     list-style: none;
-    animation: mover 5s infinite;
+    animation: mover 6s ease-in-out infinite;
     
 }
 
@@ -132,18 +134,11 @@ html{
       100%{
         transform: translateY(-80px);
       }
-
-
-      
-
-
-
 }
-
-
 
 .descripcion{
     display: flex;
+    text-align: center;
     justify-content: center;
     align-items: center;
     background-color:#fff;
@@ -172,7 +167,7 @@ html{
     justify-content:center;
     align-items: center; 
     background-color:#fff;
-    gap: 100px; 
+    gap: 200px; 
     flex-wrap: wrap;
 }
 
@@ -181,6 +176,7 @@ html{
     display: flex;
     width: 400px;
     height: 350px;
+   
     
 }
 
@@ -191,8 +187,7 @@ html{
     height: 350px;
     cursor: pointer;
     border: 1px solid #400f65a9;
-    border-radius: 20px;  
-   
+    border-radius: 20px;   
 }
 
 .imagenes .clientes img:hover{
@@ -200,25 +195,36 @@ html{
     transition: .10s;
 }
 
-.fila .col ul {
-    gap: 20px;
-    width: 60px;
-    position: absolute;
-    top: 70%;
-    transform: translate(-50%, -50%);
-    right: 65%;
-    list-style: none;
-    display: inline-flex;
-       
-}
-
-.contacto .col .informacion ul li{
-    margin-bottom: 20px;
-    color: black;
-    font-size: 15px;
+.servicios{
+    display: flex;
+    max-width: 1200px;
+    height: 400px;
+    margin: 80px auto;
+    justify-content: center;
+    background-color: rgb(74, 127, 202);
+    gap: 50px;
     
 }
 
+.servicios .card{
+    background-color: #353779;
+    border: solid 2px #31b8cd;
+    width: 100%;
+
+}
+
+.servicios .card img{
+    border: solid 2px #31b8cd;
+    object-fit: cover;
+    width: 100%;
+    height: 60%;
+    
+}
+
+.contacto .contenedor-contacto .fila col {
+    width: 200px;
+
+}
 
 .contacto .col .informacion ul li i{
     color: #31b8cd;
@@ -233,43 +239,55 @@ html{
     }
 
 }
-
-.contenedor-contacto{
-    max-width: 1300px;
-    margin: 70px auto;
+.contacto{
+    margin: 45px 0;
 
 }
-
+.contenedor-contacto{
+    max-width: 1100px;
+    margin: 0 auto;
+    
+}
 
 .contacto .fila{
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    gap: 15px;
     display: flex;
     
 }
 
-@media (max-width: 1280px){
+@media (max-width: 700px){
     .contacto .fila{
+        max-width: 100%;
+        padding: 10px;
         flex-direction: column;
     }
     
 }
 
-.contacto .col{
-    width: 100%;
-    padding: 20px;
-    position: relative; 
-    text-align: center;  
+.contacto .contact-h1 h1{
+    font-size: 48px;
+    text-align: center;
+    color: #31b8cd;
+    padding: 40px 0;
+    
 }
 
 .contacto .col input, .contacto .col textarea{
     width: 100%;
-    padding: 15px;
+    padding:12px;
     border: none;
     margin-bottom: 12px;
     background-color: #31b8cd8e;
-    color: #fff;
+    color: #000000;
     font-size: 20px;
-    border-radius: 5px;  
+    border-radius: 1px;  
 }
+
 
 @media (max-width: 1280px){
     .contacto .col input, .contacto .col textarea{
@@ -277,10 +295,6 @@ html{
     }        
 }
 
-.contacto .col img{
-    width: 90%;
-    
-}
 
 @media (max-width: 1280px){
     .contacto .col img{
@@ -300,7 +314,7 @@ html{
 
 .redes ul li{
     display: inline-block;
-    margin: 0 30px;
+    padding: 50px;
     color:#31b8cd8e;
     font-size: 50px;
 }
@@ -324,13 +338,12 @@ html{
 }
 
 .contenedor-footer .fila .col{
-    height: 200px;
+    margin: 20px;
 }
 
 .col i{
-    padding: 20px;
     color:#ffffff;
-    font-size: 50px;
+    font-size: 35px;
 }
 
 .col h3{
@@ -370,8 +383,7 @@ nav.responsive ul li{
 
 @media (max-width:900px){
     .fila{
-        flex-direction: column;
-        
+        flex-direction: column; 
      
     }
 }
