@@ -211,6 +211,7 @@ html{
     justify-content: center;
     gap: 50px;
     
+    
 }
 
 .servicios .card{
@@ -233,10 +234,27 @@ html{
     text-align: center;
 }
 
+@media (max-width: 900px){
+    .servicios{
+        flex-direction: column;
+        height: 1400px;
+        
+    }
+}
+
 .contacto .contenedor-contacto .fila col {
     width: 200px;
 
 }
+
+@media(max-width: 900px){
+    .fila .col iframe{
+        width: 100%;
+        }
+
+}
+
+
 
 .contacto .col .informacion ul li i{
     color: #31b8cd;
@@ -320,15 +338,16 @@ html{
     height: 100px;
     background-color: #7e539f;
     align-items: center;
-    justify-content: center;  
-    
+    justify-content:space-around; 
 }
+
 
 .redes ul li{
     display: inline-block;
-    padding: 50px;
     color:#31b8cd8e;
     font-size: 50px;
+
+    
 }
 
 .redes ul li i:hover{
