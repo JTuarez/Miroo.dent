@@ -80,6 +80,7 @@ html{
     cursor: pointer;
     border-radius: 5px;
     padding: 5px 10px;
+    margin: 20px;
     display: none;
 }
 
@@ -163,11 +164,10 @@ html{
 .imagenes{
     display: flex;
     width: 100%;
-    padding: 20px;
     justify-content:center;
     align-items: center; 
     background-color:#fff;
-    gap: 200px; 
+    gap: 100px; 
     flex-wrap: wrap;
 }
 
@@ -176,15 +176,13 @@ html{
     display: flex;
     width: 400px;
     height: 350px;
-   
-    
 }
 
 .imagenes .clientes img{
     position: relative;
     object-fit: cover;
     width: 400px;
-    height: 350px;
+    height: 300px;
     cursor: pointer;
     border: 1px solid #400f65a9;
     border-radius: 20px;   
@@ -197,7 +195,7 @@ html{
 
 .tservicio{
     display: flex;
-    margin: 70px auto;
+    margin: 50px auto;
     justify-content: center;
     align-items: center;
     font-size: 30px;
@@ -211,23 +209,28 @@ html{
     height: 450px;
     margin: 50px auto;
     justify-content: center;
-   
     gap: 50px;
     
 }
 
 .servicios .card{
-
     border: solid 2px #31b8cd;
     width: 100%;
 }
 
 .servicios .card img{
-
     object-fit: cover;
     width: 100%;
     height: 50%;
     
+}
+
+.servicios .card h1{
+    
+    font-size: 20px;
+    color: #7e539f;
+    margin: 50px;
+    text-align: center;
 }
 
 .contacto .contenedor-contacto .fila col {
@@ -371,10 +374,11 @@ html{
   } 
     
 nav.responsive{
+   text-align: center;
    display: block;
    position: absolute;
    top: 75px;
-   width: 100px;
+   width: 200px;
    right: 0;
    background-color:#7e539f; 
    }
@@ -384,7 +388,7 @@ nav.responsive ul{
 }
 
 nav.responsive ul li{
-    border-bottom: 1px solid;
+    border-bottom: 2px solid;
     padding: 10px 8px;
     
 }
